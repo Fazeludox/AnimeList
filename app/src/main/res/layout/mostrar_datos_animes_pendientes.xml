@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/mostrarAnimePendiente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:fontFamily="sans-serif-light"
+        android:padding="2dp"
+        android:textAllCaps="true"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/mostrarAPActual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:fontFamily="sans-serif-light"
+        android:padding="2dp"
+        android:textAllCaps="true"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/mostrarTemporada"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:fontFamily="sans-serif-light"
+        android:padding="2dp"
+        android:textAllCaps="true"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/mostrarAño"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:fontFamily="sans-serif-light"
+        android:padding="2dp"
+        android:textAllCaps="true"
+        android:textColor="@color/white" />
+
+</LinearLayout>

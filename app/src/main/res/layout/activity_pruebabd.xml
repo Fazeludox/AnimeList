@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:background="@drawable/grad_bg"
+    android:orientation="vertical"
+    tools:context=".PruebaBD">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <ImageView
+            android:id="@+id/Logo"
+            android:layout_width="115dp"
+            android:layout_height="115dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="100dp"
+            android:layout_marginBottom="10dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/logominature">
+
+        </ImageView>
+
+        <RelativeLayout
+            android:id="@+id/CapaDatos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Logo"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/ViewTitulo"
+                android:layout_width="203dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="160dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="Iniciar sesión"
+                android:textColor="@color/white"
+                android:textSize="25sp"></TextView>
+
+            <LinearLayout
+                android:id="@+id/CampoUP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ViewTitulo"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="50dp"
+                android:clipToPadding="false"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/User"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:fontFamily="sans-serif-light"
+                    android:padding="5dp"
+                    android:text="Usuario:"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white" />
+
+                <EditText
+                    android:id="@+id/editUser"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edit_bg"
+
+                    android:ems="5"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/Password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:padding="5dp"
+
+                    android:text="Contraseña:"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white" />
+
+                <EditText
+                    android:id="@+id/editPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edit_bg"
+                    android:ems="5"
+
+                    android:inputType="textPassword"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/btnTest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/CampoUP"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="100dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="100dp"
+
+                android:background="@drawable/btn_bg"
+                android:fontFamily="sans-serif-medium"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="Prueba conexion"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:visibility="visible" />
+
+            <Switch
+                android:id="@+id/InfoDB"
+                android:layout_width="158dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btnTest"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="100dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="100dp"
+                android:layout_marginBottom="5dp"
+                android:text="Base de datos"
+                android:textColor="@color/white"
+                android:textColorLink="#9D53AA"
+                android:verticalScrollbarPosition="defaultPosition" />
+
+            <LinearLayout
+                android:id="@+id/CampoBD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/InfoDB"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="100dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="100dp"
+                android:baselineAligned="false"
+                android:focusableInTouchMode="false"
+                android:hapticFeedbackEnabled="false"
+                android:orientation="vertical"
+                android:padding="25dp"
+                android:textAlignment="center"
+                android:verticalScrollbarPosition="defaultPosition"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/IP"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="Direccion IP:"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/txtIP"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="1"
+
+                    android:background="@drawable/edit_bg"
+                    android:digits="0123456789."
+                    android:ems="5"
+                    android:inputType="number|numberDecimal"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/Puerto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="Puerto:"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/txtPuerto"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/edit_bg"
+                    android:ems="5"
+                    android:inputType="number"
+                    android:maxLength="4"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/NameBD"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="sans-serif-light"
+                    android:gravity="center"
+                    android:text="Nombre BD:"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/txtNameBD"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/edit_bg"
+                    android:ems="5"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnLogin"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/CampoBD"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="100dp"
+                android:layout_marginTop="20dp"
+
+                android:layout_marginEnd="100dp"
+                android:background="@drawable/btn_bg"
+                android:fontFamily="sans-serif-medium"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="Confirmar"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:visibility="visible" />
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
